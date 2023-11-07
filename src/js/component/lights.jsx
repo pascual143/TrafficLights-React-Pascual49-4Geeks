@@ -5,10 +5,6 @@ const Lights =() =>{
     const [red, setRed] = useState('red')
     const [ambar, setAmbar] = useState('ambar')
     const [verde, setVerde] = useState('verde')
-
-    
-    const [displayPurple, setDisplayPurple] = useState("none")
-
     
 //funtion to get the lights when clicks
     function changeColourRed(){
@@ -67,33 +63,53 @@ const Lights =() =>{
             setVerde("verde");
         }
     }
+
 //function to get a random light traffic
-const addPurple = () => {
-    setDisplayPurple("block");
-    setRed("purple");
-}
+const [showPurple, setshowPurple] = useState(false);
+const onClick = () => setshowPurple(true);
+
+const PurpleLights = () => (
+    <div>
+        <p className='purple'></p>
+    </div>
+);
     
     return (
         <>
         <div className="traffic_background">
-            <button 
+            <button
+                type="button"  
                 className={red} 
                 onClick={()=>changeColourRed()}>
+                {showPurple ? <PurpleLights /> : null}
             </button>
-			<button 
+			<button
+                type="button"  
                 className={ambar} 
                 onClick={()=>changeColourAmbar()}>
+                {showPurple ? <PurpleLights /> : null}
             </button>
-			<button 
+			<button
+                type="button"
                 className={verde} 
                 onClick={()=>changeColourVerde()}>
+                {showPurple ? <PurpleLights /> : null}
             </button>
-        </div>
-        <div className={"purple " + (red === "purple" ? "glow" : "")} style={{ display: displayPurple }} onClick={addPurple}></div>
-				
+        </div>				
         <div>
-            <button className="btn btn-primary m-4" onClick={changeColorRed}>Change</button>
-			<button className="btn btn-success m-4" onClick={addPurple}>Añadir Púrpura</button>
+            <button 
+            className="btn btn-danger m-4 mt-5" 
+            onClick={changeColorRed}>
+                Change
+            </button>
+			<button 
+                type="button" 
+                className="btn btn-success m-4 mt-5" 
+                onClick={onClick}>
+                    Change to purple lights
+            </button>
+
+           
         </div>
         </>
     )

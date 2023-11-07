@@ -2,8 +2,9 @@
 .body {
   display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    background-color: antiquewhite;
+    height: 800px;
 }
 
 .trafficTop {
@@ -11,7 +12,7 @@
   justify-content: center;
   background-color: #000000;
   width: 10px;
-  height:100px;
+  height:400px;
 }
 
 .traffic_background{
@@ -41,6 +42,14 @@
 .verde {
   margin: 10px 0px 0px 10px;
   background-color: #00FF00	;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.purple {
+  margin: -2px 0px 0px -9px;
+  background-color: #a200ff	;
   width: 100px;
   height: 100px;
   border-radius: 100%;
