@@ -1,0 +1,74 @@
+/*CONTAINER AND TOP CLABE*/
+.body {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.trafficTop {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  width: 10px;
+  height:100px;
+}
+
+.traffic_background{
+  display: block;
+  background-color: #000000;
+  width: 120px;
+  height: 350px;
+  border-radius: 20px;
+}
+/*LIGHTS*/
+.red {
+  margin: 10px 0px 0px 10px;
+  background-color: #FF0000;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.ambar {
+  margin: 10px 0px 0px 10px;
+  background-color: #FFA500;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.verde {
+  margin: 10px 0px 0px 10px;
+  background-color: #00FF00	;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.glowRed{
+  margin: 10px 0px 0px 10px;
+  background-color: #FF0000;
+  box-shadow: 2px 5px 30px #ffff00;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.glowAmbar{
+  margin: 10px 0px 0px 10px;
+  background-color: #FFA500;
+  box-shadow: 2px 5px 30px #ffff00;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.glowGreen{
+  margin: 10px 0px 0px 10px;
+  background-color: #00FF00;
+  box-shadow: 5px 5px 30px #ffff00;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
